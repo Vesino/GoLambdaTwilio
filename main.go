@@ -17,7 +17,7 @@ func handler() error {
 	params := &twilioApi.CreateMessageParams{}
 	params.SetTo(fmt.Sprintf("whatsapp:%s", os.Getenv("TO_NUMBER")))
 	params.SetFrom(fmt.Sprintf("whatsapp:%s", os.Getenv("FROM_NUMBER")))
-	params.SetBody("Message sent from Go API AWS")
+	params.SetBody("Buen dia Vesino, saludos desde una API automatizada :v ")
 
 	resp, err := clientTwilio.Api.CreateMessage(params)
 	if err != nil {
