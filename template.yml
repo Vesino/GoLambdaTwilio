@@ -16,8 +16,8 @@ Resources:
         - x86_64
       Environment: 
         Variables:
-          TWILIO_USERNAME: "{{resolve:ssm:/TWILIO_ACCOUNT_SID:1}}"
-          TWILIO_PASSWORD: "{{resolve:ssm:/TWILIO_AUTH_TOKEN:1}}"
+          TWILIO_ACCOUNT_SID: "{{resolve:ssm:/TWILIO_ACCOUNT_SID:1}}"
+          TWILIO_AUTH_TOKEN: "{{resolve:ssm:/TWILIO_AUTH_TOKEN:1}}"
           TO_NUMBER: "{{resolve:ssm:/TO_NUMBER:1}}"
           FROM_NUMBER: "{{resolve:ssm:/FROM_NUMBER:1}}"
       Events:
